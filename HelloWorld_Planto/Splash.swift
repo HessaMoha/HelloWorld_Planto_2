@@ -26,7 +26,7 @@ var body: some View {
             
             
             VStack{
-                Image("Logo")
+                Image("Planto")
                     .resizable()
                     .frame(width: 120,height: 130)
                     .cornerRadius(20)
