@@ -35,6 +35,7 @@ var body: some View {
                 Text("Planto")
                     .font(.system(size: 50))
                     .fontWeight(.bold)
+                
                     .foregroundColor(Color.white)
                 Text("")
                 Text("Plant Care reminders 🌿")
