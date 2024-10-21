@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C61A880D2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */; };
-		C61A880F2CC520C200C7FD3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A880E2CC520C200C7FD3A /* ContentView.swift */; };
 		C61A88112CC520C300C7FD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A88102CC520C300C7FD3A /* Assets.xcassets */; };
 		C61A88142CC520C300C7FD3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A88132CC520C300C7FD3A /* Preview Assets.xcassets */; };
 		C61A881E2CC520C300C7FD3A /* HelloWorld_PlantoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A881D2CC520C300C7FD3A /* HelloWorld_PlantoTests.swift */; };
 		C61A88282CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A88272CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift */; };
 		C61A882A2CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A88292CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift */; };
+		C63054112CC675FF000D92B9 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63054102CC675FF000D92B9 /* Splash.swift */; };
+		C63054132CC67615000D92B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63054122CC67615000D92B9 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		C61A88092CC520C200C7FD3A /* HelloWorld_Planto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld_Planto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoApp.swift; sourceTree = "<group>"; };
-		C61A880E2CC520C200C7FD3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C61A88102CC520C300C7FD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61A88132CC520C300C7FD3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C61A88192CC520C300C7FD3A /* HelloWorld_PlantoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorld_PlantoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +44,8 @@
 		C61A88232CC520C300C7FD3A /* HelloWorld_PlantoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorld_PlantoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61A88272CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoUITests.swift; sourceTree = "<group>"; };
 		C61A88292CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C63054102CC675FF000D92B9 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		C63054122CC67615000D92B9 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +97,10 @@
 			isa = PBXGroup;
 			children = (
 				C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */,
-				C61A880E2CC520C200C7FD3A /* ContentView.swift */,
 				C61A88102CC520C300C7FD3A /* Assets.xcassets */,
 				C61A88122CC520C300C7FD3A /* Preview Content */,
+				C63054102CC675FF000D92B9 /* Splash.swift */,
+				C63054122CC67615000D92B9 /* Main.swift */,
 			);
 			path = HelloWorld_Planto;
 			sourceTree = "<group>";
@@ -257,7 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61A880F2CC520C200C7FD3A /* ContentView.swift in Sources */,
+				C63054112CC675FF000D92B9 /* Splash.swift in Sources */,
+				C63054132CC67615000D92B9 /* Main.swift in Sources */,
 				C61A880D2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
