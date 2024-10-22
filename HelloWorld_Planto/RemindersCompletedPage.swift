@@ -1,5 +1,5 @@
 //
-//  TodayReminderPage.swift
+//  RemindersCompletedPage.swift
 //  HelloWorld_Planto
 //
 //  Created by حصه العجالين on 19/04/1446 AH.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TodayReminderPage: View {
+struct RemindersCompletedPage: View {
     var body: some View {
         ZStack{
             Color.black.ignoresSafeArea()
@@ -16,18 +16,32 @@ struct TodayReminderPage: View {
                     .font(.system(size: 34))
                     .fontWeight(.bold)
                     .foregroundColor(Color.white)
-                
-                
                     
 
-                
+                Divider()
+                    .background(Color.gray)
+                    .padding()
                 
                 Spacer()
-                Text("Today")
-                    .font(.system(size: 28))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                    .position(CGPoint(x: 60, y: 50))
+                
+                
+                Image("wink")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 219, height: 227)
+                    .position(CGPoint(x: 190, y: 200))
+                    
+                
+                Text("All Done! 🎉")
+                    .foregroundColor(Color("whitish"))
+                    .font(.system(size: 25))
+                    .fontWeight(.semibold)
+                    .position(CGPoint(x: 200, y:150))
+                
+                Text("All Reminders Completed")
+                    .foregroundColor(Color("greengray"))
+                    .font(.system(size: 16))
+                    .position(CGPoint(x: 200, y: 1))
                 
                 
                 
@@ -55,10 +69,10 @@ struct TodayReminderPage: View {
                                     .foregroundColor(Color("greenbtn")) // Text color
                                     .font(.system(size: 18 ))
                             }
-                            .padding()
+                            
                             .frame(width: 200, height: 50) // Fixed size for the button
                             .cornerRadius(10) // Rounded corners for the button
-                            
+                          
                         }
                
                 
@@ -75,8 +89,9 @@ struct TodayReminderPage: View {
             
         }
     }
+
 }
 
 #Preview {
-    TodayReminderPage()
+    RemindersCompletedPage()
 }

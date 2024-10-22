@@ -7,69 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C61A880D2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */; };
-		C61A88112CC520C300C7FD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A88102CC520C300C7FD3A /* Assets.xcassets */; };
-		C61A88142CC520C300C7FD3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A88132CC520C300C7FD3A /* Preview Assets.xcassets */; };
-		C61A881E2CC520C300C7FD3A /* HelloWorld_PlantoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A881D2CC520C300C7FD3A /* HelloWorld_PlantoTests.swift */; };
-		C61A88282CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A88272CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift */; };
-		C61A882A2CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A88292CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift */; };
-		C63054112CC675FF000D92B9 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63054102CC675FF000D92B9 /* Splash.swift */; };
-		C63054132CC67615000D92B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63054122CC67615000D92B9 /* Main.swift */; };
-		C6EA05A42CC7C6C4003F09A4 /* TodayReminderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05A32CC7C6C4003F09A4 /* TodayReminderPage.swift */; };
-		C6EA05A62CC7CE6F003F09A4 /* RemindersCompletedPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05A52CC7CE6F003F09A4 /* RemindersCompletedPage.swift */; };
-		C6EA05DE2CC7EC15003F09A4 /* SetReminderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05DD2CC7EC15003F09A4 /* SetReminderSheet.swift */; };
+		C6EA05B42CC7E4AE003F09A4 /* CakeBakerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05B32CC7E4AE003F09A4 /* CakeBakerAppApp.swift */; };
+		C6EA05B62CC7E4AE003F09A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05B52CC7E4AE003F09A4 /* ContentView.swift */; };
+		C6EA05B82CC7E4B0003F09A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6EA05B72CC7E4B0003F09A4 /* Assets.xcassets */; };
+		C6EA05BB2CC7E4B0003F09A4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6EA05BA2CC7E4B0003F09A4 /* Preview Assets.xcassets */; };
+		C6EA05C52CC7E4B0003F09A4 /* CakeBakerAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05C42CC7E4B0003F09A4 /* CakeBakerAppTests.swift */; };
+		C6EA05CF2CC7E4B0003F09A4 /* CakeBakerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05CE2CC7E4B0003F09A4 /* CakeBakerAppUITests.swift */; };
+		C6EA05D12CC7E4B0003F09A4 /* CakeBakerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05D02CC7E4B0003F09A4 /* CakeBakerAppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C61A881A2CC520C300C7FD3A /* PBXContainerItemProxy */ = {
+		C6EA05C12CC7E4B0003F09A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C61A88012CC520C200C7FD3A /* Project object */;
+			containerPortal = C6EA05A82CC7E4AE003F09A4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C61A88082CC520C200C7FD3A;
-			remoteInfo = HelloWorld_Planto;
+			remoteGlobalIDString = C6EA05AF2CC7E4AE003F09A4;
+			remoteInfo = CakeBakerApp;
 		};
-		C61A88242CC520C300C7FD3A /* PBXContainerItemProxy */ = {
+		C6EA05CB2CC7E4B0003F09A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C61A88012CC520C200C7FD3A /* Project object */;
+			containerPortal = C6EA05A82CC7E4AE003F09A4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C61A88082CC520C200C7FD3A;
-			remoteInfo = HelloWorld_Planto;
+			remoteGlobalIDString = C6EA05AF2CC7E4AE003F09A4;
+			remoteInfo = CakeBakerApp;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C61A88092CC520C200C7FD3A /* HelloWorld_Planto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld_Planto.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoApp.swift; sourceTree = "<group>"; };
-		C61A88102CC520C300C7FD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C61A88132CC520C300C7FD3A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C61A88192CC520C300C7FD3A /* HelloWorld_PlantoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorld_PlantoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C61A881D2CC520C300C7FD3A /* HelloWorld_PlantoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoTests.swift; sourceTree = "<group>"; };
-		C61A88232CC520C300C7FD3A /* HelloWorld_PlantoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorld_PlantoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C61A88272CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoUITests.swift; sourceTree = "<group>"; };
-		C61A88292CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C63054102CC675FF000D92B9 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
-		C63054122CC67615000D92B9 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		C6EA05A32CC7C6C4003F09A4 /* TodayReminderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayReminderPage.swift; sourceTree = "<group>"; };
-		C6EA05A52CC7CE6F003F09A4 /* RemindersCompletedPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCompletedPage.swift; sourceTree = "<group>"; };
-		C6EA05DD2CC7EC15003F09A4 /* SetReminderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetReminderSheet.swift; sourceTree = "<group>"; };
+		C6EA05B02CC7E4AE003F09A4 /* CakeBakerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeBakerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EA05B32CC7E4AE003F09A4 /* CakeBakerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeBakerAppApp.swift; sourceTree = "<group>"; };
+		C6EA05B52CC7E4AE003F09A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6EA05B72CC7E4B0003F09A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6EA05BA2CC7E4B0003F09A4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6EA05C02CC7E4B0003F09A4 /* CakeBakerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeBakerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EA05C42CC7E4B0003F09A4 /* CakeBakerAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeBakerAppTests.swift; sourceTree = "<group>"; };
+		C6EA05CA2CC7E4B0003F09A4 /* CakeBakerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeBakerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EA05CE2CC7E4B0003F09A4 /* CakeBakerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeBakerAppUITests.swift; sourceTree = "<group>"; };
+		C6EA05D02CC7E4B0003F09A4 /* CakeBakerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeBakerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C61A88062CC520C200C7FD3A /* Frameworks */ = {
+		C6EA05AD2CC7E4AE003F09A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61A88162CC520C300C7FD3A /* Frameworks */ = {
+		C6EA05BD2CC7E4B0003F09A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61A88202CC520C300C7FD3A /* Frameworks */ = {
+		C6EA05C72CC7E4B0003F09A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,146 +71,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C61A88002CC520C200C7FD3A = {
+		C6EA05A72CC7E4AE003F09A4 = {
 			isa = PBXGroup;
 			children = (
-				C61A880B2CC520C200C7FD3A /* HelloWorld_Planto */,
-				C61A881C2CC520C300C7FD3A /* HelloWorld_PlantoTests */,
-				C61A88262CC520C300C7FD3A /* HelloWorld_PlantoUITests */,
-				C61A880A2CC520C200C7FD3A /* Products */,
+				C6EA05B22CC7E4AE003F09A4 /* CakeBakerApp */,
+				C6EA05C32CC7E4B0003F09A4 /* CakeBakerAppTests */,
+				C6EA05CD2CC7E4B0003F09A4 /* CakeBakerAppUITests */,
+				C6EA05B12CC7E4AE003F09A4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C61A880A2CC520C200C7FD3A /* Products */ = {
+		C6EA05B12CC7E4AE003F09A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C61A88092CC520C200C7FD3A /* HelloWorld_Planto.app */,
-				C61A88192CC520C300C7FD3A /* HelloWorld_PlantoTests.xctest */,
-				C61A88232CC520C300C7FD3A /* HelloWorld_PlantoUITests.xctest */,
+				C6EA05B02CC7E4AE003F09A4 /* CakeBakerApp.app */,
+				C6EA05C02CC7E4B0003F09A4 /* CakeBakerAppTests.xctest */,
+				C6EA05CA2CC7E4B0003F09A4 /* CakeBakerAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C61A880B2CC520C200C7FD3A /* HelloWorld_Planto */ = {
+		C6EA05B22CC7E4AE003F09A4 /* CakeBakerApp */ = {
 			isa = PBXGroup;
 			children = (
-				C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */,
-				C61A88102CC520C300C7FD3A /* Assets.xcassets */,
-				C61A88122CC520C300C7FD3A /* Preview Content */,
-				C63054102CC675FF000D92B9 /* Splash.swift */,
-				C63054122CC67615000D92B9 /* Main.swift */,
-				C6EA05A32CC7C6C4003F09A4 /* TodayReminderPage.swift */,
-				C6EA05A52CC7CE6F003F09A4 /* RemindersCompletedPage.swift */,
-				C6EA05DD2CC7EC15003F09A4 /* SetReminderSheet.swift */,
+				C6EA05B32CC7E4AE003F09A4 /* CakeBakerAppApp.swift */,
+				C6EA05B52CC7E4AE003F09A4 /* ContentView.swift */,
+				C6EA05B72CC7E4B0003F09A4 /* Assets.xcassets */,
+				C6EA05B92CC7E4B0003F09A4 /* Preview Content */,
 			);
-			path = HelloWorld_Planto;
+			path = CakeBakerApp;
 			sourceTree = "<group>";
 		};
-		C61A88122CC520C300C7FD3A /* Preview Content */ = {
+		C6EA05B92CC7E4B0003F09A4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				C61A88132CC520C300C7FD3A /* Preview Assets.xcassets */,
+				C6EA05BA2CC7E4B0003F09A4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C61A881C2CC520C300C7FD3A /* HelloWorld_PlantoTests */ = {
+		C6EA05C32CC7E4B0003F09A4 /* CakeBakerAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				C61A881D2CC520C300C7FD3A /* HelloWorld_PlantoTests.swift */,
+				C6EA05C42CC7E4B0003F09A4 /* CakeBakerAppTests.swift */,
 			);
-			path = HelloWorld_PlantoTests;
+			path = CakeBakerAppTests;
 			sourceTree = "<group>";
 		};
-		C61A88262CC520C300C7FD3A /* HelloWorld_PlantoUITests */ = {
+		C6EA05CD2CC7E4B0003F09A4 /* CakeBakerAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C61A88272CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift */,
-				C61A88292CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift */,
+				C6EA05CE2CC7E4B0003F09A4 /* CakeBakerAppUITests.swift */,
+				C6EA05D02CC7E4B0003F09A4 /* CakeBakerAppUITestsLaunchTests.swift */,
 			);
-			path = HelloWorld_PlantoUITests;
+			path = CakeBakerAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C61A88082CC520C200C7FD3A /* HelloWorld_Planto */ = {
+		C6EA05AF2CC7E4AE003F09A4 /* CakeBakerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C61A882D2CC520C300C7FD3A /* Build configuration list for PBXNativeTarget "HelloWorld_Planto" */;
+			buildConfigurationList = C6EA05D42CC7E4B0003F09A4 /* Build configuration list for PBXNativeTarget "CakeBakerApp" */;
 			buildPhases = (
-				C61A88052CC520C200C7FD3A /* Sources */,
-				C61A88062CC520C200C7FD3A /* Frameworks */,
-				C61A88072CC520C200C7FD3A /* Resources */,
+				C6EA05AC2CC7E4AE003F09A4 /* Sources */,
+				C6EA05AD2CC7E4AE003F09A4 /* Frameworks */,
+				C6EA05AE2CC7E4AE003F09A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HelloWorld_Planto;
-			productName = HelloWorld_Planto;
-			productReference = C61A88092CC520C200C7FD3A /* HelloWorld_Planto.app */;
+			name = CakeBakerApp;
+			productName = CakeBakerApp;
+			productReference = C6EA05B02CC7E4AE003F09A4 /* CakeBakerApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C61A88182CC520C300C7FD3A /* HelloWorld_PlantoTests */ = {
+		C6EA05BF2CC7E4B0003F09A4 /* CakeBakerAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C61A88302CC520C300C7FD3A /* Build configuration list for PBXNativeTarget "HelloWorld_PlantoTests" */;
+			buildConfigurationList = C6EA05D72CC7E4B0003F09A4 /* Build configuration list for PBXNativeTarget "CakeBakerAppTests" */;
 			buildPhases = (
-				C61A88152CC520C300C7FD3A /* Sources */,
-				C61A88162CC520C300C7FD3A /* Frameworks */,
-				C61A88172CC520C300C7FD3A /* Resources */,
+				C6EA05BC2CC7E4B0003F09A4 /* Sources */,
+				C6EA05BD2CC7E4B0003F09A4 /* Frameworks */,
+				C6EA05BE2CC7E4B0003F09A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C61A881B2CC520C300C7FD3A /* PBXTargetDependency */,
+				C6EA05C22CC7E4B0003F09A4 /* PBXTargetDependency */,
 			);
-			name = HelloWorld_PlantoTests;
-			productName = HelloWorld_PlantoTests;
-			productReference = C61A88192CC520C300C7FD3A /* HelloWorld_PlantoTests.xctest */;
+			name = CakeBakerAppTests;
+			productName = CakeBakerAppTests;
+			productReference = C6EA05C02CC7E4B0003F09A4 /* CakeBakerAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C61A88222CC520C300C7FD3A /* HelloWorld_PlantoUITests */ = {
+		C6EA05C92CC7E4B0003F09A4 /* CakeBakerAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C61A88332CC520C300C7FD3A /* Build configuration list for PBXNativeTarget "HelloWorld_PlantoUITests" */;
+			buildConfigurationList = C6EA05DA2CC7E4B0003F09A4 /* Build configuration list for PBXNativeTarget "CakeBakerAppUITests" */;
 			buildPhases = (
-				C61A881F2CC520C300C7FD3A /* Sources */,
-				C61A88202CC520C300C7FD3A /* Frameworks */,
-				C61A88212CC520C300C7FD3A /* Resources */,
+				C6EA05C62CC7E4B0003F09A4 /* Sources */,
+				C6EA05C72CC7E4B0003F09A4 /* Frameworks */,
+				C6EA05C82CC7E4B0003F09A4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C61A88252CC520C300C7FD3A /* PBXTargetDependency */,
+				C6EA05CC2CC7E4B0003F09A4 /* PBXTargetDependency */,
 			);
-			name = HelloWorld_PlantoUITests;
-			productName = HelloWorld_PlantoUITests;
-			productReference = C61A88232CC520C300C7FD3A /* HelloWorld_PlantoUITests.xctest */;
+			name = CakeBakerAppUITests;
+			productName = CakeBakerAppUITests;
+			productReference = C6EA05CA2CC7E4B0003F09A4 /* CakeBakerAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C61A88012CC520C200C7FD3A /* Project object */ = {
+		C6EA05A82CC7E4AE003F09A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					C61A88082CC520C200C7FD3A = {
+					C6EA05AF2CC7E4AE003F09A4 = {
 						CreatedOnToolsVersion = 15.4;
 					};
-					C61A88182CC520C300C7FD3A = {
+					C6EA05BF2CC7E4B0003F09A4 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = C61A88082CC520C200C7FD3A;
+						TestTargetID = C6EA05AF2CC7E4AE003F09A4;
 					};
-					C61A88222CC520C300C7FD3A = {
+					C6EA05C92CC7E4B0003F09A4 = {
 						CreatedOnToolsVersion = 15.4;
-						TestTargetID = C61A88082CC520C200C7FD3A;
+						TestTargetID = C6EA05AF2CC7E4AE003F09A4;
 					};
 				};
 			};
-			buildConfigurationList = C61A88042CC520C200C7FD3A /* Build configuration list for PBXProject "HelloWorld_Planto" */;
+			buildConfigurationList = C6EA05AB2CC7E4AE003F09A4 /* Build configuration list for PBXProject "CakeBakerApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -226,36 +214,36 @@
 				en,
 				Base,
 			);
-			mainGroup = C61A88002CC520C200C7FD3A;
-			productRefGroup = C61A880A2CC520C200C7FD3A /* Products */;
+			mainGroup = C6EA05A72CC7E4AE003F09A4;
+			productRefGroup = C6EA05B12CC7E4AE003F09A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C61A88082CC520C200C7FD3A /* HelloWorld_Planto */,
-				C61A88182CC520C300C7FD3A /* HelloWorld_PlantoTests */,
-				C61A88222CC520C300C7FD3A /* HelloWorld_PlantoUITests */,
+				C6EA05AF2CC7E4AE003F09A4 /* CakeBakerApp */,
+				C6EA05BF2CC7E4B0003F09A4 /* CakeBakerAppTests */,
+				C6EA05C92CC7E4B0003F09A4 /* CakeBakerAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C61A88072CC520C200C7FD3A /* Resources */ = {
+		C6EA05AE2CC7E4AE003F09A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61A88142CC520C300C7FD3A /* Preview Assets.xcassets in Resources */,
-				C61A88112CC520C300C7FD3A /* Assets.xcassets in Resources */,
+				C6EA05BB2CC7E4B0003F09A4 /* Preview Assets.xcassets in Resources */,
+				C6EA05B82CC7E4B0003F09A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61A88172CC520C300C7FD3A /* Resources */ = {
+		C6EA05BE2CC7E4B0003F09A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61A88212CC520C300C7FD3A /* Resources */ = {
+		C6EA05C82CC7E4B0003F09A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,53 +253,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C61A88052CC520C200C7FD3A /* Sources */ = {
+		C6EA05AC2CC7E4AE003F09A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C63054112CC675FF000D92B9 /* Splash.swift in Sources */,
-				C63054132CC67615000D92B9 /* Main.swift in Sources */,
-				C6EA05A42CC7C6C4003F09A4 /* TodayReminderPage.swift in Sources */,
-				C6EA05A62CC7CE6F003F09A4 /* RemindersCompletedPage.swift in Sources */,
-				C6EA05DE2CC7EC15003F09A4 /* SetReminderSheet.swift in Sources */,
-				C61A880D2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift in Sources */,
+				C6EA05B62CC7E4AE003F09A4 /* ContentView.swift in Sources */,
+				C6EA05B42CC7E4AE003F09A4 /* CakeBakerAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61A88152CC520C300C7FD3A /* Sources */ = {
+		C6EA05BC2CC7E4B0003F09A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61A881E2CC520C300C7FD3A /* HelloWorld_PlantoTests.swift in Sources */,
+				C6EA05C52CC7E4B0003F09A4 /* CakeBakerAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C61A881F2CC520C300C7FD3A /* Sources */ = {
+		C6EA05C62CC7E4B0003F09A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C61A882A2CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift in Sources */,
-				C61A88282CC520C300C7FD3A /* HelloWorld_PlantoUITests.swift in Sources */,
+				C6EA05D12CC7E4B0003F09A4 /* CakeBakerAppUITestsLaunchTests.swift in Sources */,
+				C6EA05CF2CC7E4B0003F09A4 /* CakeBakerAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C61A881B2CC520C300C7FD3A /* PBXTargetDependency */ = {
+		C6EA05C22CC7E4B0003F09A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C61A88082CC520C200C7FD3A /* HelloWorld_Planto */;
-			targetProxy = C61A881A2CC520C300C7FD3A /* PBXContainerItemProxy */;
+			target = C6EA05AF2CC7E4AE003F09A4 /* CakeBakerApp */;
+			targetProxy = C6EA05C12CC7E4B0003F09A4 /* PBXContainerItemProxy */;
 		};
-		C61A88252CC520C300C7FD3A /* PBXTargetDependency */ = {
+		C6EA05CC2CC7E4B0003F09A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C61A88082CC520C200C7FD3A /* HelloWorld_Planto */;
-			targetProxy = C61A88242CC520C300C7FD3A /* PBXContainerItemProxy */;
+			target = C6EA05AF2CC7E4AE003F09A4 /* CakeBakerApp */;
+			targetProxy = C6EA05CB2CC7E4B0003F09A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		C61A882B2CC520C300C7FD3A /* Debug */ = {
+		C6EA05D22CC7E4B0003F09A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -374,7 +358,7 @@
 			};
 			name = Debug;
 		};
-		C61A882C2CC520C300C7FD3A /* Release */ = {
+		C6EA05D32CC7E4B0003F09A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -430,14 +414,14 @@
 			};
 			name = Release;
 		};
-		C61A882E2CC520C300C7FD3A /* Debug */ = {
+		C6EA05D52CC7E4B0003F09A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HelloWorld_Planto/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CakeBakerApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -450,7 +434,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "w.HelloWorld-Planto";
+				PRODUCT_BUNDLE_IDENTIFIER = w.CakeBakerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -458,14 +442,14 @@
 			};
 			name = Debug;
 		};
-		C61A882F2CC520C300C7FD3A /* Release */ = {
+		C6EA05D62CC7E4B0003F09A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HelloWorld_Planto/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CakeBakerApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -478,7 +462,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "w.HelloWorld-Planto";
+				PRODUCT_BUNDLE_IDENTIFIER = w.CakeBakerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -486,7 +470,7 @@
 			};
 			name = Release;
 		};
-		C61A88312CC520C300C7FD3A /* Debug */ = {
+		C6EA05D82CC7E4B0003F09A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -496,16 +480,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "w.HelloWorld-PlantoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = w.CakeBakerAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorld_Planto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HelloWorld_Planto";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeBakerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CakeBakerApp";
 			};
 			name = Debug;
 		};
-		C61A88322CC520C300C7FD3A /* Release */ = {
+		C6EA05D92CC7E4B0003F09A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -515,16 +499,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "w.HelloWorld-PlantoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = w.CakeBakerAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelloWorld_Planto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HelloWorld_Planto";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeBakerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CakeBakerApp";
 			};
 			name = Release;
 		};
-		C61A88342CC520C300C7FD3A /* Debug */ = {
+		C6EA05DB2CC7E4B0003F09A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -532,16 +516,16 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "w.HelloWorld-PlantoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = w.CakeBakerAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HelloWorld_Planto;
+				TEST_TARGET_NAME = CakeBakerApp;
 			};
 			name = Debug;
 		};
-		C61A88352CC520C300C7FD3A /* Release */ = {
+		C6EA05DC2CC7E4B0003F09A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -549,55 +533,55 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "w.HelloWorld-PlantoUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = w.CakeBakerAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HelloWorld_Planto;
+				TEST_TARGET_NAME = CakeBakerApp;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C61A88042CC520C200C7FD3A /* Build configuration list for PBXProject "HelloWorld_Planto" */ = {
+		C6EA05AB2CC7E4AE003F09A4 /* Build configuration list for PBXProject "CakeBakerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C61A882B2CC520C300C7FD3A /* Debug */,
-				C61A882C2CC520C300C7FD3A /* Release */,
+				C6EA05D22CC7E4B0003F09A4 /* Debug */,
+				C6EA05D32CC7E4B0003F09A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C61A882D2CC520C300C7FD3A /* Build configuration list for PBXNativeTarget "HelloWorld_Planto" */ = {
+		C6EA05D42CC7E4B0003F09A4 /* Build configuration list for PBXNativeTarget "CakeBakerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C61A882E2CC520C300C7FD3A /* Debug */,
-				C61A882F2CC520C300C7FD3A /* Release */,
+				C6EA05D52CC7E4B0003F09A4 /* Debug */,
+				C6EA05D62CC7E4B0003F09A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C61A88302CC520C300C7FD3A /* Build configuration list for PBXNativeTarget "HelloWorld_PlantoTests" */ = {
+		C6EA05D72CC7E4B0003F09A4 /* Build configuration list for PBXNativeTarget "CakeBakerAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C61A88312CC520C300C7FD3A /* Debug */,
-				C61A88322CC520C300C7FD3A /* Release */,
+				C6EA05D82CC7E4B0003F09A4 /* Debug */,
+				C6EA05D92CC7E4B0003F09A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C61A88332CC520C300C7FD3A /* Build configuration list for PBXNativeTarget "HelloWorld_PlantoUITests" */ = {
+		C6EA05DA2CC7E4B0003F09A4 /* Build configuration list for PBXNativeTarget "CakeBakerAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C61A88342CC520C300C7FD3A /* Debug */,
-				C61A88352CC520C300C7FD3A /* Release */,
+				C6EA05DB2CC7E4B0003F09A4 /* Debug */,
+				C6EA05DC2CC7E4B0003F09A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C61A88012CC520C200C7FD3A /* Project object */;
+	rootObject = C6EA05A82CC7E4AE003F09A4 /* Project object */;
 }
