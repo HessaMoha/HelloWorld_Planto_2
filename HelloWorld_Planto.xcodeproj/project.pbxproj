@@ -15,6 +15,7 @@
 		C61A882A2CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A88292CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift */; };
 		C63054112CC675FF000D92B9 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63054102CC675FF000D92B9 /* Splash.swift */; };
 		C63054132CC67615000D92B9 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63054122CC67615000D92B9 /* Main.swift */; };
+		C6EA05A42CC7C6C4003F09A4 /* TodayReminderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EA05A32CC7C6C4003F09A4 /* TodayReminderPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		C61A88292CC520C300C7FD3A /* HelloWorld_PlantoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C63054102CC675FF000D92B9 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		C63054122CC67615000D92B9 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		C6EA05A32CC7C6C4003F09A4 /* TodayReminderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayReminderPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				C61A88122CC520C300C7FD3A /* Preview Content */,
 				C63054102CC675FF000D92B9 /* Splash.swift */,
 				C63054122CC67615000D92B9 /* Main.swift */,
+				C6EA05A32CC7C6C4003F09A4 /* TodayReminderPage.swift */,
 			);
 			path = HelloWorld_Planto;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			files = (
 				C63054112CC675FF000D92B9 /* Splash.swift in Sources */,
 				C63054132CC67615000D92B9 /* Main.swift in Sources */,
+				C6EA05A42CC7C6C4003F09A4 /* TodayReminderPage.swift in Sources */,
 				C61A880D2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
