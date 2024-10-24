@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6083A402CCA8848007BC910 /* EditDeleteReminderPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6083A3F2CCA8848007BC910 /* EditDeleteReminderPage.swift */; };
 		C61A880D2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */; };
 		C61A88112CC520C300C7FD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A88102CC520C300C7FD3A /* Assets.xcassets */; };
 		C61A88142CC520C300C7FD3A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A88132CC520C300C7FD3A /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C6083A3F2CCA8848007BC910 /* EditDeleteReminderPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDeleteReminderPage.swift; sourceTree = "<group>"; };
 		C61A88092CC520C200C7FD3A /* HelloWorld_Planto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld_Planto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C61A880C2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld_PlantoApp.swift; sourceTree = "<group>"; };
 		C61A88102CC520C300C7FD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				C6EA05A32CC7C6C4003F09A4 /* TodayReminderPage.swift */,
 				C6EA05A52CC7CE6F003F09A4 /* RemindersCompletedPage.swift */,
 				C6EA05DD2CC7EC15003F09A4 /* SetReminderSheet.swift */,
+				C6083A3F2CCA8848007BC910 /* EditDeleteReminderPage.swift */,
 			);
 			path = HelloWorld_Planto;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				C63054132CC67615000D92B9 /* Main.swift in Sources */,
 				C6EA05A42CC7C6C4003F09A4 /* TodayReminderPage.swift in Sources */,
 				C6EA05A62CC7CE6F003F09A4 /* RemindersCompletedPage.swift in Sources */,
+				C6083A402CCA8848007BC910 /* EditDeleteReminderPage.swift in Sources */,
 				C6EA05DE2CC7EC15003F09A4 /* SetReminderSheet.swift in Sources */,
 				C61A880D2CC520C200C7FD3A /* HelloWorld_PlantoApp.swift in Sources */,
 			);
