@@ -1,28 +1,28 @@
 import SwiftUI
 
 struct EditDeleteReminderPage: View {
-    @Binding var reminder: Reminder
+    @Binding var reminder: Reminder?
     @Environment(\.presentationMode) var presentationMode // To close the page
     @ObservedObject var reminderStore = ReminderStore.shared
     
-    @State private var plantName: String
-    @State private var selectedRoom: String
-    @State private var selectedLight: String
-    @State private var selectedWateringDays: String
-    @State private var selectedWaterAmount: String
+    @State private var plantName: String = ""
+    @State private var selectedRoom: String = "Bedroom"
+    @State private var selectedLight: String = "Full sun"
+    @State private var selectedWateringDays: String = "Every day"
+    @State private var selectedWaterAmount: String = "20-50 ml"
     
     let rooms = ["Bedroom", "Living Room", "Kitchen", "Balcony", "Bathroom"]
     let lightOptions = ["Full sun", "Partial sun", "Low light"]
     let wateringDaysOptions = ["Every day", "Every 2 days", "Every 3 days", "Once a week", "Every 10 days", "Every 2 weeks"]
     let waterAmounts = ["20-50 ml", "50-100 ml", "100-200 ml", "200-300 ml"]
     
-    init(reminder: Binding<Reminder>) {
+    init(reminder: Binding<Reminder?>) {
         _reminder = reminder
-        _plantName = State(initialValue: reminder.wrappedValue.plantName)
-        _selectedRoom = State(initialValue: reminder.wrappedValue.room)
-        _selectedLight = State(initialValue: reminder.wrappedValue.light)
-        _selectedWateringDays = State(initialValue: reminder.wrappedValue.wateringDays)
-        _selectedWaterAmount = State(initialValue: reminder.wrappedValue.waterAmount)
+        _plantName = State(initialValue: reminder.wrappedValue?.plantName ?? "")
+        _selectedRoom = State(initialValue: reminder.wrappedValue?.room ?? "Bedroom")
+        _selectedLight = State(initialValue: reminder.wrappedValue?.light ?? "Full sun")
+        _selectedWateringDays = State(initialValue: reminder.wrappedValue?.wateringDays ?? "Every day")
+        _selectedWaterAmount = State(initialValue: reminder.wrappedValue?.waterAmount ?? "20-50 ml")
     }
     
     var body: some View {
@@ -121,23 +121,26 @@ struct EditDeleteReminderPage: View {
     }
     
     private func saveChanges() {
-        if let index = reminderStore.reminders.firstIndex(where: { $0.id == reminder.id }) {
-            reminderStore.reminders[index].plantName = plantName
-            reminderStore.reminders[index].room = selectedRoom
-            reminderStore.reminders[index].light = selectedLight
-            reminderStore.reminders[index].wateringDays = selectedWateringDays
-            reminderStore.reminders[index].waterAmount = selectedWaterAmount
-        }
+        guard let reminder = reminder else { return } // Ensure the reminder is not nil
+        // Update the reminder with new values
+        reminderStore.reminders.removeAll { $0.id == reminder.id }
+        let updatedReminder = Reminder(plantName: plantName, room: selectedRoom, light: selectedLight, wateringDays: selectedWateringDays, waterAmount: selectedWaterAmount)
+        reminderStore.addReminder(updatedReminder) // Save the updated reminder
     }
-    
+
     private func deleteReminder() {
-        if let index = reminderStore.reminders.firstIndex(where: { $0.id == reminder.id }) {
+        guard let reminderId = reminder?.id else {
+            return
+        }
+        
+        if let index = reminderStore.reminders.firstIndex(where: { $0.id == reminderId }) {
             reminderStore.reminders.remove(at: index)
             presentationMode.wrappedValue.dismiss()
         }
     }
+
 }
 
 #Preview {
-    EditDeleteReminderPage()
+    EditDeleteReminderPage(reminder: .constant(Reminder(plantName: "Pothos", room: "Living Room", light: "Partial sun", wateringDays: "Every 3 days", waterAmount: "50-100 ml")))
 }

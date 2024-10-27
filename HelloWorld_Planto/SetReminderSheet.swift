@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SetReminderSheet: View {
     
+    var reminderToEdit: Reminder?
     
     @State private var plantName:String = ""
     @State private var selectedRoom="Bedroom"
@@ -21,6 +22,14 @@ struct SetReminderSheet: View {
     let lightOptions = ["Full sun", "Partial sun", "Low light"]
     let wateringDaysOptions = ["Every day", "Every 2 days", "Every 3 days", "Once a week", "Every 10 days", "Every 2 weeks"]
     let waterAmounts = ["20-50 ml", "50-100 ml", "100-200 ml", "200-300 ml"]
+    
+    init(reminderToEdit: Reminder? = nil) {
+            _plantName = State(initialValue: reminderToEdit?.plantName ?? "")
+            _selectedRoom = State(initialValue: reminderToEdit?.room ?? "Bedroom")
+            _selectedLight = State(initialValue: reminderToEdit?.light ?? "Full sun")
+            _selectedWateringDays = State(initialValue: reminderToEdit?.wateringDays ?? "Every day")
+            _selectedWaterAmount = State(initialValue: reminderToEdit?.waterAmount ?? "20-50 ml")
+        }
     
     var body: some View {
         NavigationView{
@@ -112,7 +121,7 @@ struct SetReminderSheet: View {
     
 }
 
-struct Reminder: Identifiable{
+struct Reminder: Identifiable, Equatable{
     var id = UUID()
     var plantName: String
     var room: String

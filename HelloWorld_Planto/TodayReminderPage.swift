@@ -1,17 +1,21 @@
 import SwiftUI
 
 struct TodayReminderPage: View {
-    @State private var showReminderSheet = false
-    @ObservedObject var reminderStore = ReminderStore.shared
-    @State private var selectedReminder: Reminder? // To hold the selected reminder for editing
     
+    @State private var showRemindersCompleted = false
+    
+    @State private var showReminderSheet = false
+    @State private var showEditDeleteReminderPage = false
+    @ObservedObject var reminderStore = ReminderStore.shared
+    @State private var selectedReminder: Reminder?
+
     var body: some View {
         NavigationView {
             ZStack {
                 Color.black.ignoresSafeArea()
                 
                 VStack(alignment: .leading) {
-                    Text("My Plants 🌱 ")
+                    Text("My Plants 🌱")
                         .font(.system(size: 34))
                         .fontWeight(.bold)
                         .foregroundColor(Color.white)
@@ -38,11 +42,7 @@ struct TodayReminderPage: View {
                                         .font(.system(size: 30))
                                         .foregroundColor(reminderStore.selectedReminderIds.contains(reminder.id) ? Color("greenbtn") : .gray)
                                         .onTapGesture {
-                                            if reminderStore.selectedReminderIds.contains(reminder.id) {
-                                                reminderStore.selectedReminderIds.remove(reminder.id)
-                                            } else {
-                                                reminderStore.selectedReminderIds.insert(reminder.id)
-                                            }
+                                            toggleReminderSelection(reminder)
                                         }
                                     
                                     Text(reminder.plantName)
@@ -62,16 +62,14 @@ struct TodayReminderPage: View {
                             .cornerRadius(10)
                             .onTapGesture {
                                 selectedReminder = reminder
+                                showEditDeleteReminderPage = true
                             }
-                            // Conditional NavigationLink
-                            if let selectedReminder = selectedReminder {
-                                NavigationLink(
-                                    destination: EditDeleteReminderPage(reminder: Binding(get: { selectedReminder }, set: { self.selectedReminder = $0 }))
-                                ) {
-                                    EmptyView()
+                            .swipeActions {
+                                Button(role: .destructive) {
+                                    deleteReminder(reminder: reminder)
+                                } label: {
+                                    Label("", systemImage: "trash")
                                 }
-                                .frame(width: 0, height: 0) // Keep the link invisible
-                                .hidden() // Hide the NavigationLink
                             }
                         }
                     }
@@ -81,21 +79,17 @@ struct TodayReminderPage: View {
                     Spacer()
                     
                     HStack {
-                        ZStack {
-                            Button(action: {
-                                showReminderSheet.toggle()
-                            }) {
-                                Image(systemName: "plus")
-                                    .font(.system(size: 20, weight: .bold))
-                                    .frame(width: 30.0, height: 60)
-                                    .background(Color("greenbtn"))
-                                    .foregroundColor(.black)
-                                    .clipShape(Circle())
-                                    .shadow(radius: 10)
-                            }
-                        }
-                        .sheet(isPresented: $showReminderSheet) {
-                            SetReminderSheet()
+                        Button(action: {
+                            selectedReminder = nil
+                            showReminderSheet = true
+                        }) {
+                            Image(systemName: "plus")
+                                .font(.system(size: 20, weight: .bold))
+                                .frame(width: 30.0, height: 60)
+                                .background(Color("greenbtn"))
+                                .foregroundColor(.black)
+                                .clipShape(Circle())
+                                .shadow(radius: 10)
                         }
                         
                         Text("New Reminder")
@@ -106,9 +100,39 @@ struct TodayReminderPage: View {
                 }
                 .padding()
             }
+            .sheet(isPresented: Binding(
+                get: { showReminderSheet || showEditDeleteReminderPage },
+                set: { isPresented in
+                    if !isPresented {
+                        showReminderSheet = false
+                        showEditDeleteReminderPage = false
+                    }
+                }
+            )) {
+                if let reminder = selectedReminder {
+                    EditDeleteReminderPage(reminder: .constant(reminder))
+                } else {
+                    SetReminderSheet()
+                }
+            }
+        }
+    }
+    
+    private func toggleReminderSelection(_ reminder: Reminder) {
+        if reminderStore.selectedReminderIds.contains(reminder.id) {
+            reminderStore.selectedReminderIds.remove(reminder.id)
+        } else {
+            reminderStore.selectedReminderIds.insert(reminder.id)
+        }
+    }
+
+    private func deleteReminder(reminder: Reminder) {
+        if let index = reminderStore.reminders.firstIndex(of: reminder) {
+            reminderStore.reminders.remove(at: index)
         }
     }
 }
+
 
 #Preview {
     TodayReminderPage()
