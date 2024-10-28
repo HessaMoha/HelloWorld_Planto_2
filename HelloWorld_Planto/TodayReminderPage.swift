@@ -3,9 +3,10 @@ import SwiftUI
 struct TodayReminderPage: View {
     
     @State private var showRemindersCompleted = false
-    
     @State private var showReminderSheet = false
     @State private var showEditDeleteReminderPage = false
+    @State private var navigateToMain = false
+    
     @ObservedObject var reminderStore = ReminderStore.shared
     @State private var selectedReminder: Reminder?
 
@@ -112,17 +113,34 @@ struct TodayReminderPage: View {
                 if let reminder = selectedReminder {
                     EditDeleteReminderPage(reminder: .constant(reminder))
                 } else {
-                    SetReminderSheet()
+                    SetReminderSheet(navigateToTodayReminderPage: .constant(true))
                 }
             }
+            .background(
+                NavigationLink(destination: Main(), isActive: $navigateToMain){
+                    EmptyView()
+                }
+                    .hidden()
+            )
+            .background(
+                NavigationLink(destination: RemindersCompletedPage(), isActive: $showRemindersCompleted){
+                    EmptyView()
+                }
+                .hidden()
+            )
         }
+        .navigationBarHidden(true) // Hide the back button
     }
+    
     
     private func toggleReminderSelection(_ reminder: Reminder) {
         if reminderStore.selectedReminderIds.contains(reminder.id) {
             reminderStore.selectedReminderIds.remove(reminder.id)
         } else {
             reminderStore.selectedReminderIds.insert(reminder.id)
+        }
+        if reminderStore.selectedReminderIds.count == reminderStore.reminders.count {
+            showRemindersCompleted = true
         }
     }
 

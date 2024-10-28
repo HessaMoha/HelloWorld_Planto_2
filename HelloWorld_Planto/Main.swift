@@ -1,62 +1,73 @@
-//
-//  Main.swift
-//  HelloWorld_Planto
-//
-//  Created by حصه العجالين on 18/04/1446 AH.
-//
+// Main.swift
+// HelloWorld_Planto
+// Created by حصه العجالين on 18/04/1446 AH.
 
 import SwiftUI
 
 struct Main: View {
+    @State private var showSetReminderSheet = false
+    @State private var navigateToTodayReminderPage = false
+    
     var body: some View {
-        ZStack{
-            Color.black.ignoresSafeArea()
-            VStack{
-                Text("My Plants 🌱")
-                    .font(.system(size: 34))
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
-                    .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)// Left alignment
-
-                Divider()
-                    .background(Color.gray)
-                    .padding()
-                
-                Spacer()
-                
-                Image("Planto")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 164, height: 180)
-                    .position(CGPoint(x: 200, y: 140))
+        NavigationView {
+            ZStack {
+                Color.black.ignoresSafeArea()
+                VStack(spacing: 30) {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("My Plants 🌱")
+                            .font(.system(size: 34))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        Divider()
+                            .background(Color.gray)
+                    }
                     
-                
-                Text("Start your plant journey! ")
-                    .foregroundColor(Color("whitish"))
-                    .font(.system(size: 25))
-                    .fontWeight(.semibold)
-                    .position(CGPoint(x: 200, y:120))
-                
-                Text("Now all your plants will be in one place and we will help you take care of them :)🪴")
-                    .foregroundColor(Color("greengray"))
-                    .font(.system(size: 16))
-                    .position(CGPoint(x: 200, y: 10))
-                
-                
-                Button("Set Plant Reminder") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    Spacer()
+                    
+                    VStack(spacing: 20) {
+                        Image("Planto")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 164, height: 180)
+                        
+                        Text("Start your plant journey!")
+                            .foregroundColor(Color("whitish"))
+                            .font(.system(size: 25))
+                            .fontWeight(.semibold)
+                        
+                        Text("Now all your plants will be in one place and we will help you take care of them :)🪴")
+                            .foregroundColor(Color("greengray"))
+                            .font(.system(size: 16))
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 20)
+                        
+                        Button(action: {
+                            showSetReminderSheet = true
+                        }) {
+                            Text("Set Plant Reminder")
+                                .frame(width: 280, height: 50)
+                                .background(Color("greenbtn"))
+                                .foregroundColor(.black)
+                                .cornerRadius(10)
+                        }
+                        .sheet(isPresented: $showSetReminderSheet) {
+                            SetReminderSheet(navigateToTodayReminderPage: $navigateToTodayReminderPage)
+                        }
+                        .background(
+                            NavigationLink(destination: TodayReminderPage(), isActive: $navigateToTodayReminderPage) {
+                                EmptyView()
+                            }
+                            .hidden()
+                        )
+                    }
+                    
+                    Spacer()
                 }
-                .frame(width: 280,height: 40)
-                .foregroundColor(.black)
-                .background(Color("greenbtn"))
-                .cornerRadius(10)
-                .position(CGPoint(x: 200, y: -90))
-                
-                
-                
-                
+                .padding()
             }
-            
+            .navigationBarHidden(true) // Hide the back button
         }
     }
 }

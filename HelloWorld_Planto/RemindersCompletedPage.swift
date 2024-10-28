@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct RemindersCompletedPage: View {
+    @State private var showSetReminderSheet = false
+    @State private var navigateToTodayReminderPage = false
+    
     var body: some View {
         ZStack{
             Color.black.ignoresSafeArea()
@@ -47,8 +50,7 @@ struct RemindersCompletedPage: View {
                 
                 
                 Button(action: {
-                            // Action to perform when the button is tapped
-                            
+                    showSetReminderSheet = true
                         }) {
                             HStack {
                                 // Circular plus icon
@@ -74,19 +76,18 @@ struct RemindersCompletedPage: View {
                             .cornerRadius(10) // Rounded corners for the button
                           
                         }
-               
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                        .sheet(isPresented: $showSetReminderSheet) {
+                            SetReminderSheet(navigateToTodayReminderPage: $navigateToTodayReminderPage)
+                        }
+                        .background(
+                            NavigationLink(destination: TodayReminderPage(), isActive: $navigateToTodayReminderPage){
+                                EmptyView()
+                            }
+                                .hidden()
+                        )
                 
             }
-            
+            .navigationBarHidden(true) // Hide the back button
         }
     }
 
